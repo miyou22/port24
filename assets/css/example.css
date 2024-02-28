@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.head{
+  position: fixed;
+  width: 100%;
+  top: 3.75rem;
+  z-index: 999;
+}
+.inner{
+  max-width: 100%;
+  padding: 0 3.75rem;
+  margin: 0 auto;
+}
+.headLine{
+  height: 0.2rem;
+  background-color: black;
+}
+.headTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'EASTARJET-Medium';
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 6.56rem;
+}
+
+.headLine2{
+  height: 0.1rem;
+  background-color: black;
+  margin-top: 0.125px;
+}
+
+#content{
+  padding: 8.15rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  min-width: 34rem;
+}
+#section1{
+  height: 100vh;
+  position: relative;
+  background-color: #FAF7F5;
+
+}
+.sec1Title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec1Title h1{
+  font-size: 128px;
+  white-space: nowrap;
+}
+.sec1Title .headLine2{
+  margin-bottom: 1.3rem
+}
+.sec1Title p{
+  font-size: 26px;
+}
+
+
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -76%);
+  overflow: hidden;
+  /* background-color: blue; */
+  opacity: 0.1;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+  width: 100%;
+  font-size: 128px;
+  font-weight: bold;
+  animation: scroll 7s linear infinite;
+}
+
+.marquee-text:before {
+  content: "SEOBI'S PORTFOLIO";
+}
+
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.section2{
+  height: 150vh;
+  background-color: blue;
+}
+
+.sec2Wrap{
+  height: 150vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.mySelf{
+  width: 40rem;
+  height: 40rem;
+  border-radius: 5%;
+}
+
+.mySelf > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+
+
+
+}
+.mySelfText{
+  word-break: keep-all;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 17.4rem;
+  width: 30%;
+  position: relative;
+}
+
+.about{
+  position: absolute;
+  left: -30rem;
+  top: -160px;
+  font-size: 4.1rem;
+  text-align: left;
+}
+
+
+
